@@ -10,9 +10,9 @@ void Record::setRelativeContribution(double totalCurrentYearsInvestment)
 void Record::setExpectedProfit(double totalCurrentYearsInvestment)
 {
 	if (totalCurrentYearsInvestment < 0) {
-		expectedprofit = 0;  //sets expected profit to 0 if the the total investment sum is negative
+		expectedProfit = 0;  //sets expected profit to 0 if the the total investment sum is negative
 	}
 	else { //calculates expected profit otherwise
-		expectedprofit = 0.2 * currentyearsinvestment * relativecontribution;
+		expectedProfit = 0.2 * currentYearsInvestment * relativeContribution;
 	}
 }
